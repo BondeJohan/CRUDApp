@@ -11,6 +11,5 @@ namespace CRUDApp.Interface
 {
     public interface IRetrievePerson
     {
-        void ReadPersonInfo(PersonContext db);
     }
 }

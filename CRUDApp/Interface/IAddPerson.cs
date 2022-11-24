@@ -11,6 +11,6 @@ namespace CRUDApp.Interface
 {
     public interface IAddPerson
     {
-        void AddNewPerson(Person person, PersonContext db);
+        void AddNewPerson();
     }
 }

@@ -10,12 +10,17 @@ namespace CRUDApp.Database
 {
     public class PersonContext : DbContext
     {
-        private const string DatabaseName = "PersonDB";
+        private readonly string connectionString;
+        public PersonContext(string conn)
+        {
+            this.connectionString = conn;
+        }
         public DbSet<Person> Persons { get; set; }
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer($@"Server = .\SQLEXPRESS;Database={DatabaseName};trusted_connection=true");
+            optionsBuilder.UseSqlServer(connectionString);
         }
     }
 }

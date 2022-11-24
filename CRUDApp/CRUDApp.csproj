@@ -170,11 +170,6 @@
     <Compile Include="Interface\IRemovePerson.cs" />
     <Compile Include="Interface\IRetrievePerson.cs" />
     <Compile Include="Interface\IUpdatePerson.cs" />
-    <Compile Include="Migrations\20221115125524_InitialDatabase.cs" />
-    <Compile Include="Migrations\20221115125524_InitialDatabase.designer.cs">
-      <DependentUpon>20221115125524_InitialDatabase.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\PersonContextModelSnapshot.cs" />
     <Compile Include="Model\Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

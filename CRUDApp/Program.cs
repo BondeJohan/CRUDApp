@@ -15,25 +15,10 @@ namespace CRUDApp
     {
         public static void Main(string[] args)
         {
-            PersonContext db = new PersonContext();
+            var context = new PersonContext("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=PersonDB;Integrated Security=True");
 
-            Person newPerson = new Person();
-
-            AddPerson addNewPerson = new AddPerson();
-
-            addNewPerson.AddNewPerson(newPerson, db);
-
-            UpdatePerson upDatePerson = new UpdatePerson();
-
-            upDatePerson.UpdatePersonInfo(newPerson, db);
-
-            RemovePerson removePerson = new RemovePerson();
-
-            removePerson.RemovePersonInfo(newPerson, db);
-
-            RetrievePerson retrievePerson = new RetrievePerson();
-
-            retrievePerson.ReadPersonInfo(db);
+            AddPerson newPerson = new AddPerson(context);
+            newPerson.AddNewPerson();
         }
     }
 }
