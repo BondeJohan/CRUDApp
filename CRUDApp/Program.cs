@@ -15,7 +15,7 @@ namespace CRUDApp
     {
         public static void Main(string[] args)
         {
-            var context = new PersonContext("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=PersonDB;Integrated Security=True");
+            var context = new PersonDB("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=PersonDB;Integrated Security=True");
 
             AddPerson newPerson = new AddPerson(context);
             newPerson.AddNewPerson();

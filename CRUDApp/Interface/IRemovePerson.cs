@@ -11,6 +11,6 @@ namespace CRUDApp.Interface
 {
     public interface IRemovePerson
     {
-        void RemovePersonInfo(Person person, PersonContext db);
+        void RemovePersonInfo(Person person, PersonDB db);
     }
 }

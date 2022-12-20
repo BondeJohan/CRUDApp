@@ -11,7 +11,7 @@ namespace CRUDApp.CRUDClasses
 {
     internal class RemovePerson : IRemovePerson
     {
-        public void RemovePersonInfo(Person person, PersonContext db)
+        public void RemovePersonInfo(Person person, PersonDB db)
         {
             Console.Write("Enter Id to remove: ");
             int idRemove = Convert.ToInt32(Console.ReadLine());

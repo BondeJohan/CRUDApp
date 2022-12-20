@@ -15,9 +15,9 @@ namespace CRUDApp.CRUDClasses
 {
     internal class AddPerson : IAddPerson
     {
-        private readonly PersonContext db;
+        private readonly PersonDB db;
 
-        public AddPerson(PersonContext conn)
+        public AddPerson(PersonDB conn)
         {
             this.db = conn;
         }

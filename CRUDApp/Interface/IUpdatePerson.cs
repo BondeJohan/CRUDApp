@@ -11,6 +11,6 @@ namespace CRUDApp.Interface
 {
     internal interface IUpdatePerson
     {
-        void UpdatePersonInfo(Person person, PersonContext db);
+        void UpdatePersonInfo(Person person, PersonDB db);
     }
 }

@@ -11,7 +11,7 @@ namespace CRUDApp.CRUDClasses
 {
     internal class UpdatePerson : IUpdatePerson
     {
-        public void UpdatePersonInfo(Person person, PersonContext db)
+        public void UpdatePersonInfo(Person person, PersonDB db)
         {
             Console.WriteLine("Enter id to Update");
             int id = Convert.ToInt32(Console.ReadLine());

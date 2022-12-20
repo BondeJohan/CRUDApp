@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace CRUDApp.Database
 {
-    public class PersonContext : DbContext
+    public class PersonDB : DbContext
     {
         private readonly string connectionString;
-        public PersonContext(string conn)
+        public PersonDB(string conn)
         {
             this.connectionString = conn;
         }

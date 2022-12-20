@@ -14,9 +14,9 @@ namespace CRUDApp.CRUDClasses
 {
     internal class RetrievePerson : IRetrievePerson
     {
-        private readonly PersonContext db;
+        private readonly PersonDB db;
 
-        public RetrievePerson(PersonContext conn)
+        public RetrievePerson(PersonDB conn)
         {
             this.db = conn;
         }        
